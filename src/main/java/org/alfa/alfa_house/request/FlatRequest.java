@@ -10,7 +10,4 @@ public class FlatRequest {
 
     private Double area;
 
-    private Long price;
-
-    private String nearestMetro;
 }

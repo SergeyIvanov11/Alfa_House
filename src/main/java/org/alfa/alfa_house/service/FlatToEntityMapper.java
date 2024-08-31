@@ -1,7 +1,7 @@
 package org.alfa.alfa_house.service;
 
 import org.alfa.alfa_house.model.Flat;
-import org.alfa.alfa_house.model.FlatEntity;
+import org.alfa.alfa_house.dao.FlatEntity;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

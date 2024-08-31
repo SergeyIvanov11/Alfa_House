@@ -1,4 +1,4 @@
-package org.alfa.alfa_house.model;
+package org.alfa.alfa_house.dao;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,13 +17,4 @@ public class FlatEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    private int roomCount;
-
-    private int floor;
-
-    private Double area;
-
-    private Long price;
-
-    private String nearestMetro;
 }

@@ -3,7 +3,7 @@ package org.alfa.alfa_house.service;
 import lombok.RequiredArgsConstructor;
 import org.alfa.alfa_house.exception.FlatNotFoundException;
 import org.alfa.alfa_house.model.Flat;
-import org.alfa.alfa_house.model.FlatEntity;
+import org.alfa.alfa_house.dao.FlatEntity;
 import org.alfa.alfa_house.repository.FlatRepository;
 import org.springframework.stereotype.Service;
 

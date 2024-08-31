@@ -1,6 +1,6 @@
 package org.alfa.alfa_house.repository;
 
-import org.alfa.alfa_house.model.FlatEntity;
+import org.alfa.alfa_house.dao.FlatEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

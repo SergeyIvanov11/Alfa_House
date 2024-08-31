@@ -2,7 +2,7 @@ package org.alfa.alfa_house.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.alfa.alfa_house.model.Flat;
-import org.alfa.alfa_house.model.FlatEntity;
+import org.alfa.alfa_house.dao.FlatEntity;
 import org.alfa.alfa_house.request.FlatRequest;
 import org.alfa.alfa_house.service.DefaultFlatService;
 import org.alfa.alfa_house.service.FlatToDtoMapper;
