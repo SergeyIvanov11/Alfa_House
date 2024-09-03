@@ -17,4 +17,5 @@ import lombok.NoArgsConstructor;
 @Table(name = "SalePosts")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class PostSaleEntity extends PostEntity {
+
 }

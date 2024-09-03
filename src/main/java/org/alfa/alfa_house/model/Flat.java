@@ -41,7 +41,7 @@ public class Flat {
 
     Remont typeOfRemont; // тип ремонта
 
-    int roomCount;
+    RoomCount roomCount;
 
     int floor;
 

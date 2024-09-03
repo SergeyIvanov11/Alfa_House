@@ -1,5 +1,6 @@
 package org.alfa.alfa_house.model;
 
+import org.alfa.alfa_house.model.types.PostStatus;
 import org.alfa.alfa_house.model.types.Seller;
 
 import java.io.File;
@@ -15,4 +16,5 @@ public class Post {
     Seller seller; // тип сделки - агент или собственник
     LocalDateTime date; // время и дата создания объявления
     List<File> pictures; //структура для картинок
+    PostStatus status; //в архиве, активное и т.д.
 }

@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.alfa.alfa_house.model.House;
 import org.alfa.alfa_house.model.types.*;
 
 import java.util.UUID;
@@ -13,6 +12,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Embeddable
 @Table(name = "Flats")
 public class FlatEntity {
     @Id
@@ -46,27 +46,35 @@ public class FlatEntity {
     @Column(nullable = true)
     boolean hasDishWasher;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     SanUzel sanUzel; // вид санузла
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Bathroom bathroom; // ванна или душ
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Stove stove; // какая плита
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Layout layout; // планировка
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     WindowView view; // вид из окна
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Balcony typeOfBalcony;  // тип балкона
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Remont typeOfRemont; // тип ремонта
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     RoomCount roomCount;
 

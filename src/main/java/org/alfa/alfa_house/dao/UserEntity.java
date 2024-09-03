@@ -14,6 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Embeddable
 @Table(name = "Users")
 public class UserEntity {
     @Id

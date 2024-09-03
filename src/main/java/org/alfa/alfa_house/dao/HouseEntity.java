@@ -13,6 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Embeddable
 @Table(name = "Houses")
 public class HouseEntity {
     @Id
@@ -34,12 +35,14 @@ public class HouseEntity {
     @Column(nullable = false)
     String city;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     Lift lift;
 
     @Column(nullable = true)
     double ceilingHeight;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = true)
     HouseType houseType; // тип дома
 

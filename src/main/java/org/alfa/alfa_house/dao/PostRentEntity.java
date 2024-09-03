@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "RentPosts")
 public class PostRentEntity extends PostEntity {
+
     @Column(nullable = false)
     long deposit; // залог
 

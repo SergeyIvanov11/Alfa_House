@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.alfa.alfa_house.model.Flat;
 import org.alfa.alfa_house.model.User;
+import org.alfa.alfa_house.model.types.PostStatus;
 import org.alfa.alfa_house.model.types.Seller;
 
 import java.io.File;
@@ -17,8 +18,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Posts")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class PostEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,6 +32,7 @@ public class PostEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     UserEntity user; // автор объявления
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     Seller seller; // тип сделки - агент или собственник
 
@@ -43,4 +43,8 @@ public class PostEntity {
     @CollectionTable(name = "Pictures", joinColumns = @JoinColumn(name = "postId"))
     @Column(nullable = false)
     List<File> pictures; //структура для картинок
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    PostStatus status; //в архиве, активное и т.д.
 }
